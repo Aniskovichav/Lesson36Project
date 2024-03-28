@@ -1,20 +1,20 @@
 package by.itstep.aniskovich.java.lesson36.controller;
 
-public class Box {
-    private int value;
+public class Box<T> {
+    private T value;
 
     public Box() {
     }
 
-    public Box(int value) {
+    public Box(T value) {
         this.value = value;
     }
 
-    public int getValue() {
+    public T getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    public void setValue(T value) {
         this.value = value;
     }
 
@@ -22,4 +22,5 @@ public class Box {
     public String toString() {
         return value + "";
     }
+
 }
